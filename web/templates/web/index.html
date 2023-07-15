@@ -61,8 +61,7 @@
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <div>
-          <li><a href="https://drive.google.com/file/d/1pCr0Zq2IsetA6JF3Rs0Y4nDr3viyg3Pc/view?usp=drive_link"target="_blank" rel="noopener noreferrer" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          
+          <li><a href="https://drive.google.com/file/d/1NZO8WHm3YhhfRJDWFxPgxtMaqMMVuErE/view?usp=drive_link"target="_blank" rel="noopener noreferrer" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -327,7 +326,7 @@
           <p>Here are some of my featured projects listed below : </p>
         </div>
 
-        <div class="row" data-aos="fade-up">
+        {% comment %} <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -335,65 +334,65 @@
               <li data-filter=".filter-Data">Data Science</li>
             </ul>
           </div>
-        </div>
+        </div> {% endcomment %}
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data">
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/portfolio/EPL-web-scraping.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/EPL-web-scraping.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'assets/img/portfolio/EPL-web-scraping.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Data 1"><i class="bx bx-plus"></i></a>
                 <a href="https://github.com/charlieu222/Web-Scraping-EPL-with-BeautifulSoup/"target="_blank" rel="noopener noreferrer" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data">
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/portfolio/titanic_DATA.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/titanic_DATA.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="{% static 'assets/img/portfolio/titanic_DATA.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Data" 3"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/charlieu222/Data-visualization-with-titanic-data-set/"target="_blank" rel="noopener noreferrer" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data">
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/portfolio/NYT-Best-sellers.png' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="{% static 'assets/img/portfolio/NYT-Best-sellers.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Data 2"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/charlieu222/Web-Scraping-with-PlayWright" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/charlieu222/Web-Scraping-with-PlayWright/"target="_blank" rel="noopener noreferrer"" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-django">
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/portfolio/API_Endpoints.png' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="{% static 'assets/img/portfolio/API_Endpoints.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Django 1"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/charlieu222/Movie-Api-Capstone-project" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/charlieu222/Movie-Api-Capstone-project/"target="_blank" rel="noopener noreferrer"" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-django">
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/portfolio/Django.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="{% static 'assets/img/portfolio/Django.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Django 2"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/charlieu222/Django-User-Authentication" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/charlieu222/Django-User-Authentication/"target="_blank" rel="noopener noreferrer"" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data">
             <div class="portfolio-wrap">
               <img src="{% static 'assets/img/portfolio/Data_Manipulation-with-pd.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/Data_Manipulation-with-pd.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'assets/img/portfolio/Data_Manipulation-with-pd.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="data 3"><i class="bx bx-plus"></i></a>
                 {% comment %} <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> {% endcomment %}
               </div>
             </div>
@@ -570,7 +569,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>You can drop messages if interested in my services, I am also open to corrections about my projects</p>
+          <p>Please contact me for more information.</p>
         </div>
 
         <div class="row" data-aos="fade-in">
