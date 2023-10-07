@@ -239,8 +239,11 @@
         slidesPerView: 3,
         spaceBetween: 20
       }
-    }
-  });
+    },
+  
+  }),
+
+ 
 
   /**
    * Animation on scroll
@@ -262,36 +265,65 @@
 })()
 
 // FormData
+    const form = document.getElementById("form");
+    const result = document.getElementById("result");
+    
+    form.addEventListener("submit", function (e) {
+      const formData = new FormData(form);
+      e.preventDefault();
+      var object = {};
+      formData.forEach((value, key) => {
+        object[key] = value;
+      });
+      var json = JSON.stringify(object);
+      result.innerHTML = "Please wait...";
+    
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            result.innerHTML = json.message;
+            result.classList.remove("text-gray-500");
+            result.classList.add("text-green-500");
+          } else {
+            console.log(response);
+            result.innerHTML = json.message;
+            result.classList.remove("text-gray-500");
+            result.classList.add("text-red-500");
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          result.innerHTML = "Something went wrong!";
+        })
+        .then(function () {
+          form.reset();
+          setTimeout(() => {
+            result.style.display = "none";
+          }, 5000);
+        });
+    });
 
-
-
-  function validateForm(){
-      let name = document.forms['contactForm']['name'].value;
-      let email = document.forms['contactForm']['email'].value;
-      let subject = document.forms['contactForm']['subject'].value;
-      let message = document.forms['contactForm']['message'].value;
-
-      if (name == '' || hasNumber(name)){
-          alert('Name must be filled out and must only contain letters');
-          return false;
-      } else if (email == '' && phone == ''){
-          alert('Email or phone must be filled out');
-          return false;
-      } else if (!(email.includes('@'))){
-          alert('Email does not seem to be valid');
-          return false;
-      }else if (isNaN(subject)){
-          alert('please fill this area');
-          return false;
-      } else if (message == ''){
-          alert('Message must be filled out');
-          return false;
+    // read on blog
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
       } else {
-          // confirm or cancel
-          return confirm('Do you really want to sent the message?')
-      }
-  }
-
-  function hasNumber(myString) {
-      return /\d/.test(myString);
-  }
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }};
+   

@@ -47,7 +47,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="{% static 'assets/img/self.jpg' %}" alt="" class="img-fluid rounded-circle">
+        <img src="{% static 'assets/img/profile-img.jpg' %}" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Charles U.</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -62,9 +62,11 @@
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <div>
           <li><a href="https://drive.google.com/file/d/1NZO8WHm3YhhfRJDWFxPgxtMaqMMVuErE/view?usp=drive_link"target="_blank" rel="noopener noreferrer" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          
+          </div>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -93,7 +95,7 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="{% static 'assets/img/self.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'assets/img/profile-img.jpg' %}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             {% comment %} <h3>Data Scientist &amp; Web Developer.</h3> {% endcomment %}
@@ -211,7 +213,12 @@
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-
+            <div class="progress">
+              <span class="skill">Business Intellegence<i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -224,9 +231,9 @@
             </div>
 
             <div class="progress">
-              <span class="skill">React js <i class="val">50%</i></span>
+              <span class="skill">Data Wrangling <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -243,7 +250,7 @@
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-
+            
           </div>
 
         </div>
@@ -461,7 +468,7 @@
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bi bi-binoculars"></i></div>
             <h4 class="title"><a href="">Data Visualization</a></h4>
-            <p class="description">I offer compelling and interactive visual representations of data, where one can gain valuable insights and communicate complex information effectively. I specialize in transforming raw data into visually appealing charts, graphs, dashboards, and infographics that convey meaningful stories.</p>
+            <p class="description">I offer compelling and interactive visual representations of data, where one can gain valuable insights and communicate complex information effectively. I specialize in transforming raw data into visually appealing charts, graphs and dashboards.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bi bi-brightness-high"></i></div>
@@ -479,56 +486,8 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Below are messages from happy clients for job well done:</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  "I am extremely grateful to you for your exceptional work on our website.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
-                <h3>Paul</h3>
-                <h4>Adnim Officer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I had the pleasure of working with you on a complex project that involved web scraping and Django backend development. Your technical skills and attention to detail were truly impressive. 
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Charles you demonstrated a deep understanding of web scraping techniques and employed them effectively to retrieve and process data from various sources
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
+    <!-- ======= Blog Section ======= -->
+    <!-- End testimonial item -->
 
             {% comment %} <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
@@ -569,8 +528,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Please contact me for more information.</p>
-        </div>
+          
 
         <div class="row" data-aos="fade-in">
 
@@ -579,7 +537,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Lagos, Nigeria</p>
+                <p>Benin City, Edo State, Nigeria.</p>
               </div>
 
               <div class="email">
@@ -591,50 +549,33 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+234 8158 70 4753</p>
+                <p>+234 8158704753</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              {% comment %} <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> {% endcomment %}
             </div>
 
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            
-            <form action="" method="post">
-              {% csrf_token %}
-                  <div class="row g-3">
-                      <div class="col-md-6">
-                          <div class="form-floating">
-                              <input type="text" class="form-control" name="name" placeholder="Your Name">
-                              <label for="name">Your Name</label>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="form-floating">
-                              <input type="email" class="form-control" name="email" placeholder="Your Email">
-                              <label for="email">Your Email</label>
-                          </div>
-                      </div>
-                      <div class="col-12">
-                          <div class="form-floating">
-                              <input type="text" class="form-control" name="subject" placeholder="Subject">
-                              <label for="subject">Your Subject</label>
-                          </div>
-                      </div>
-                      <div class="col-12">
-                          <div class="form-floating">
-                              <textarea class="form-control" placeholder="Leave a message here" name="message" style="height: 150px"></textarea>
-                              <label for="message">Your Message</label>
-                          </div>
-                      </div>
-                      <div class="col-12">
-                          <button class="btn btn-primary w-100 py-3" type="submit">Send</button>
-                      </div>
-
-                  </div>
-              </form>
-         
+            <form action="{% url 'contact' %}" method="post">  <!-- urls.py have a name contact -->
+              {% csrf_token %}  <!-- cross site request forgery token for hackers -->
+            <div class="row">
+              <div class="col-lg-6">
+                <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+              </div>
+              <div class="col-lg-6">
+                <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+              </div>
+              <div class="col-12">
+                <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn dento-btn">Send Message</button>
+              </div>
+            </div>
+          </form>
+          </div>
 
         </div>
 
@@ -674,6 +615,7 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
+  
 
 </body>
 
